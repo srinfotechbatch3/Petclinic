@@ -37,6 +37,5 @@ pipeline {
               deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'TomcatCredentials', path: '', url: 'http://localhost:8080/')], contextPath: 'SRINFOTECHSpringPetclinic', war: 'target/*.war'
             }
         }
-		
     }
 }
